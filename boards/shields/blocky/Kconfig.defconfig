@@ -3,17 +3,9 @@ if SHIELD_BLOCKY_MAIN
 
 config ZMK_KEYBOARD_NAME
 	default "blocky"
-	
-config ZMK_SPLIT_ROLE_CENTRAL
-	default y
 
 config ZMK_USB
     default y
-	
-endif
-
-
-if SHIELD_BLOCKY_MAIN
 
 config ZMK_POINTING
     default y

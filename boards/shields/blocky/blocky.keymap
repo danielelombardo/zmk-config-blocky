@@ -24,8 +24,8 @@
 #define VOLUP &kp C_VOL_UP
 
 #define SLN &sl 1
-#define NAV &moto 1 1
-#define MOUSE &tog 2
+#define NUM &moto 1 1
+#define FUN &tog 2
 #define RST &moto 2 0
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 7000  // 600
@@ -62,7 +62,7 @@
                 &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Z   SLN         &kp U   &kp I       &kp O       &kp P       &kp DEL 
                 &kp TAB &kp A   &kp S   &kp D   &kp F   &kp G   &cps        &kp H   &kp J       &kp K       &kp L       &kp BSPC 
                 LSH     &kp Y   &kp X   &kp C   &kp V   &kp B   &dot_s      &kp N   &kp M       &kp UP      &kp ENTER   RSH 
-                REP     LEADR   LCT     LGUI    LALT    NAV     &kp SPACE   RST     &kp LEFT    &kp DOWN    &kp RIGHT   MOUSE 
+                REP     LEADR   LCT     LGU     LOP     NUM     &kp SPACE   RST     &kp LEFT    &kp DOWN    &kp RIGHT   FUN 
             >; 
         };
 
@@ -83,7 +83,7 @@
             //  1       2       3       4       5       6       7           8       9           10          11          12 
                 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7      &kp F8  &kp F9      &kp F10     &kp F11     &kp F12 
                 ____    LSH     LCT     LGU     LOP     ____    ____        ROP     RGU         RCT         RSH         ____ 
-                ____    ____  &mkp RCLK &mkp MCLK &mkp LCLK ____ ____   &kp K_APP &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN  ____ 
+                ____    ____  &mkp RCLK &mkp MCLK &mkp LCLK  ____  ____ &kp K_APP &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN  ____ 
                 ____    ____    ____    ____     ____   ____    ____        ____  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT ____ 
             >; 
         }; 

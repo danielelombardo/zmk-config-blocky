@@ -1,8 +1,8 @@
 
-if SHIELD_KEY66_DONGLE
+if SHIELD_BLOCKY_MAIN
 
 config ZMK_KEYBOARD_NAME
-	default "key66"
+	default "blocky"
 	
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
@@ -13,10 +13,7 @@ config ZMK_USB
 endif
 
 
-if SHIELD_KEY66_DONGLE || SHIELD_KEY66_MAIN
-    
-config ZMK_SPLIT
-    default y
+if SHIELD_BLOCKY_MAIN
 
 config ZMK_POINTING
     default y

@@ -21,8 +21,8 @@
 #define LEADR &sk LG(LS(LA(LCTRL)))
 #define DELWRD &kp LA(BSPC)
 #define REP &key_repeat
-#define VOLD &kp C_VOL_DN  
-#define VOLU &kp C_VOL_UP
+#define VOL_DN &kp C_VOL_DN  
+#define VOL_UP &kp C_VOL_UP
 
 #define SLN &sl 1
 #define NAV &moto 1 1

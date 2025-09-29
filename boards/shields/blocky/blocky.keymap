@@ -20,7 +20,7 @@
 #define RSH ks(RSHFT)
 #define LEADR &sk LG(LS(LA(LCTRL)))
 #define REP &key_repeat
-#define VOLDN   
+#define VOLDN &kp C_VOL_DN
 #define VOLUP &kp C_VOL_UP
 
 #define SLN &sl 1

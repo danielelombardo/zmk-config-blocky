@@ -30,15 +30,15 @@
 #define RST &to 0
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 7000  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 7000  // 10
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 9000  // 10
 #include <dt-bindings/zmk/pointing.h>
 &mmv {
   acceleration-exponent = <1>;      // 1
-  time-to-max-speed-ms = <400>;    // 40
+  time-to-max-speed-ms = <700>;    // 40
 };
 &msc {
-  acceleration-exponent = <1>;      // 0
-  time-to-max-speed-ms = <400>;   // 500
+  acceleration-exponent = <0>;      // 0
+  time-to-max-speed-ms = <300>;   // 500
 };
 
 / { 
@@ -61,20 +61,20 @@
             bindings = <
             //  1       2       3       4       5       6       7           8           9           10          11          12 
                 &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Z   &shf_sym    &kp U       &kp I       &kp O       &kp P       &kp DEL 
-                &kp TAB &kp A   &kp S   &kp D   &kp F   &kp G   SLN         &kp H       &kp J       &kp K       &kp L       &kp BSPC 
-                LEADR   &kp Y   &kp X   &kp C   &kp V   &kp B   &cps        &kp N       &kp M       RSH         &kp ENTER   RSH 
-                REP     LSH     LCT     LGU     LOP     NUM     &kp SPACE   &kp LEFT    &kp DOWN    &kp RIGHT   &kp UP      MOU 
+                &kp ESC &kp A   &kp S   &kp D   &kp F   &kp G   SLN         &kp H       &kp J       &kp K       &kp L       &kp BSPC 
+                &kp TAB LSH     &kp Y   &kp X   &kp C   &kp V   &kp B       &kp N       &kp M       RSH         &kp ENTER   &cps 
+                REP     LEADR   LCT     LGU     LOP     NUM     &kp SPACE   &kp LEFT    &kp DOWN    &kp RIGHT   &kp UP      MOU 
             >; 
         };
 
         num {
             display-name = "NUM";
             bindings = <
-            //  1       2           3           4           5           6           7           8       9       10      11      12 
-                &kp ESC &kp GRAVE   &kp COMMA   &kp DOT     &kp SLASH   VOLDN       VOLUP       &kp N7  &kp N8  &kp N9  &kp N0  ____ 
-                ____    &kp EQUAL   &kp MINUS   &kp SEMI    &kp SQT     &kp HOME    &kp END     &kp N4  &kp N5  &kp N6  &kp INS ____ 
-                ____    LSH         &kp LBKT    &kp RBKT    &kp BSLH    &kp PG_UP   &kp PG_DN   &kp N1  &kp N2  &kp N3  ____    ____ 
-                ____    ____        ____        ____        ____        ____        ____        ____    ____    ____    ____    ____ 
+            //  1           2           3           4           5           6           7           8       9       10      11      12 
+                ____        ____        &kp COMMA   &kp DOT     &kp SLASH   VOLDN       VOLUP       &kp N7  &kp N8  &kp N9  &kp N0  ____ 
+                &kp GRAVE   &kp EQUAL   &kp MINUS   &kp SEMI    &kp SQT     &kp HOME    &kp END     &kp N4  &kp N5  &kp N6  &kp INS ____ 
+                ____        ____        &kp LBKT    &kp RBKT    &kp BSLH    &kp PG_UP   &kp PG_DN   &kp N1  &kp N2  &kp N3  ____    ____ 
+                ____        ____        ____        ____        ____        RST         ____        ____    ____    ____    ____    ____ 
             >; 
         };
 

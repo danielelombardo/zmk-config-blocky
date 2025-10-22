@@ -51,7 +51,7 @@
         ksk: kp_sk        { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&kp>, <&sk>; }; 
         motg: mo_tog      { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "balanced"; tapping-term-ms = <200>; bindings = <&mo>, <&tog>; }; 
 //        blt: bluetoot     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_NXT>, <&bt BT_CLR>; mods = <MOD_RALT>; };
-        cps: caps_wrd     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&caps_word>, <&kp CAPS>; mods = <MOD_RSFT>; };
+        cps: caps_wrd     { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&caps_word>, <&kp CAPS>; mods = <MOD_LSFT>; };
     };
   
     keymap {
@@ -62,8 +62,8 @@
             //  1       2       3       4       5       6       7           8           9           10          11          12 
                 &kp Q   &kp W   &kp E   &kp R   &kp T   &kp Z   &shf_sym    &kp U       &kp I       &kp O       &kp P       &kp DEL 
                 &kp ESC &kp A   &kp S   &kp D   &kp F   &kp G   SLN         &kp H       &kp J       &kp K       &kp L       &kp BSPC 
-                &kp TAB LSH     &kp Y   &kp X   &kp C   &kp V   &kp B       &kp N       &kp M       RSH         &kp ENTER   &cps 
-                REP     LEADR   LCT     LGU     LOP     NUM     &kp SPACE   &kp LEFT    &kp DOWN    &kp RIGHT   &kp UP      MOU 
+                &kp TAB LSH     &kp Y   &kp X   &kp C   &kp V   &kp B       &kp N       &kp M       &cps        &kp ENTER   MOU 
+                REP     LEADR   LCT     LGU     LOP     NUM     &kp SPACE   &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   REP 
             >; 
         };
 
@@ -84,7 +84,7 @@
             //  1       2       3           4           5           6       7       8               9               10              11              12 
                 &kp F1  &kp F2  &kp F3      &kp F4      &kp F5      &kp F6  &kp F7  &kp F8          &kp F9          &kp F10         &kp F11         &kp F12 
                 ____    ____    ____        ____        ____        ____    ____    &msc SCRL_UP    &msc SCRL_DOWN  ____            ____            ____ 
-                ____    ____    &mkp RCLK   &mkp MCLK   &mkp LCLK   ____    ____    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &mmv MOVE_UP    ____ 
+                ____    ____    &mkp RCLK   &mkp MCLK   &mkp LCLK   ____    ____    &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN  &mmv MOVE_RIGHT ____ 
                 ____    ____    ____        ____        ____        RST     ____    ____            ____            ____            ____            ____ 
             >; 
         }; 

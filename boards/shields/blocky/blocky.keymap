@@ -23,7 +23,7 @@
 #define VOLDN &kp C_VOL_DN
 #define VOLUP &kp C_VOL_UP
 
-#define SLN &sl 1
+#define SLN &sl 2
 #define NUM &motg 2 2
 #define FUN &motg 3 3
 #define MOU &tog 3
@@ -44,7 +44,7 @@
 / { 
     macros {
         shf_sym: shift_symbols { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <5>; tap-ms = <15>;
-            bindings = <&macro_tap &sk LSHFT &sl 1>; };
+            bindings = <&macro_tap &sk LSHFT SLN>; };
     };
 
     behaviors {
